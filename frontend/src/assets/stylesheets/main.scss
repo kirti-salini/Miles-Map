@@ -1,0 +1,28 @@
+@import "./variables.scss";
+@import "./navbar/navbar.scss";
+@import "./modal/modal.scss";
+@import "./home/home.scss";
+@import "./splash/splash.scss";
+@import "./loading/loading.scss";
+@import "./task/task.scss";
+@import "./project/project.scss";
+@import "./permanent-drawer/permanent-drawer.scss";
+@import "./home/slider.scss";
+
+@media screen and (max-width: 3000px) {
+  html,
+  body {
+    background-color: $default-lightyellow;
+    font-family: $font-family;
+    margin: 0;
+  }
+}
+
+.main-container {
+  max-width: 100%;
+  margin-left: 225px;
+}
+
+.main-container-no-margin {
+  max-width: 100%;
+}

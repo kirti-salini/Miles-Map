@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.08e90229.css",
+    "main.js": "/static/js/main.309dc87e.js",
+    "static/media/task-completion.gif": "/static/media/task-completion.35ba89b09cca9b274fad.gif",
+    "static/media/create-task.gif": "/static/media/create-task.ed7163dea129ba35edf2.gif",
+    "static/media/assign-task.gif": "/static/media/assign-task.fcb88afdc666fb3402d4.gif",
+    "static/media/create-project.gif": "/static/media/create-project.78e4aa181084aa543e0c.gif",
+    "static/media/notes.gif": "/static/media/notes.8462caa5fb7af6483b89.gif",
+    "static/media/folder.png": "/static/media/folder.94c23547f0c8caf643f1.png",
+    "static/media/miles-map-logo.png": "/static/media/miles-map-logo.77f9cff7660bea35583e.png",
+    "static/media/name-tag.png": "/static/media/name-tag.94485c4acc1a1781b7eb.png",
+    "static/media/kirti.jpg": "/static/media/kirti.a8a2f2ae66c09a4dc334.jpg",
+    "index.html": "/index.html",
+    "main.08e90229.css.map": "/static/css/main.08e90229.css.map",
+    "main.309dc87e.js.map": "/static/js/main.309dc87e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.08e90229.css",
+    "static/js/main.309dc87e.js"
+  ]
+}

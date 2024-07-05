@@ -1,0 +1,223 @@
+@import "../variables.scss";
+
+.projects-index-container {
+  margin: 30px;
+}
+
+.create-button {
+  margin: 10px 10px 10px 10px;
+  width: 200px;
+  display: flex;
+  color: $default-darkred;
+  border: 2px solid $default-darkred;
+  border-radius: 15px;
+  padding: 10px;
+  justify-content: center;
+  // border: 1px solid transparent;
+
+  p {
+    margin: 0;
+    display: flex;
+    font-size: $font-size-20;
+    cursor: pointer;
+  }
+
+  &:hover {
+    // border: 1px solid transparent;
+    border-radius: 15px;
+    background-color:$default-darkred;
+    color: $otherwhite;
+  }
+}
+
+.projects-index-no-project {
+  display: flex;
+  justify-content: center;
+
+  p {
+    color: $default-red;
+    font-size: $font-size-25;
+    font-weight: 500;
+    margin: 50px;
+  }
+}
+
+.projects-index-grid {
+  margin: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 260px);
+  // grid-template-rows: repeat(3, 250px);
+  column-gap: 30px;
+  row-gap: 10px;
+}
+
+.img-container {
+  position: relative;
+  height: 100%;
+
+  img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s;
+  }
+
+  &:hover {
+    transform: scale(1.2);
+    z-index: 5;
+    transition: 0.3s ease-out;
+  }
+}
+
+.project-index-item {
+  position: absolute;
+  top: 90px;
+  left: 5px;
+  width: 100%;
+  height: 190px;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  overflow-wrap: break-word;
+  justify-content: space-between;
+  color: $otherwhite;
+  // border: 1px solid black;
+
+  .project-info {
+    ul {
+      list-style: none;
+      margin: 15px;
+      padding: 0;
+
+      .project-text {
+        font-size: $font-size-12;
+        font-weight: 200;
+
+        color: $otherwhite;
+        margin: 0;
+        padding: 0;
+      }
+    }
+  }
+
+  .project-action-buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -0.5rem;
+    margin-bottom: 5rem;
+
+    p {
+      cursor: pointer;
+      border: 1px solid $otherwhite;
+      font-size: $font-size-12;
+      margin: 0 0 0 30px;
+      border-radius: 6px;
+      padding: 0 7px 0 7px;
+      background-color: $default-darkgray;
+      color: $otherwhite;
+
+      &:hover {
+        border: 1px solid $default-darkgray;
+        background-color: $otherwhite;
+        color: $default-darkgray;
+      }
+    }
+
+    #proj-icon {
+      cursor: pointer;
+      vertical-align: middle;
+
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+}
+
+// Modal styling
+.project-form-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: $otherwhite;
+
+  h1 {
+    font-size: $font-size-20;
+    align-self: center;
+    color: $default-darkgray;
+    margin: 5px 0 20px 0;
+  }
+
+  .form-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: $default-darkgray;
+    margin: 10px;
+
+    .form-label {
+      font-size: $font-size-14;
+      width: 100%;
+    }
+
+    input {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex-wrap: wrap;
+      width: 258px;
+      padding: 10px;
+      margin: 10px 0 10px 0;
+      border: 1px solid $default-darkgray;
+      border-radius: 6px;
+      color: $default-darkgray;
+      font-size: $font-size-14;
+
+      &:focus {
+        outline: none;
+        border: 2px solid $otherwhite;
+        color: $default-darkgray;
+      }
+    }
+
+    .project-error {
+      color: $default-red;
+      display: flex;
+      align-self: flex-start;
+      align-items: flex-start;
+    }
+
+    p {
+      margin-top: 0;
+    }
+
+    .button-container {
+      margin-top: 20px;
+
+      button {
+        cursor: pointer;
+        padding: 10px;
+        margin: 10px;
+        border: 2px solid ;
+        border-radius: 10px;
+        font-size: $font-size-16;
+        color: $otherwhite;
+        background-color: $default-darkred;
+
+        &:hover {
+          background-color: $default-darkgray;
+          color: $otherwhite;
+        }
+      }
+
+      #delete-button {
+        &:hover {
+          background-color: $default-red;
+          border: 2px solid $otherwhite;
+          color: $otherwhite;
+        }
+      }
+    }
+  }
+}
