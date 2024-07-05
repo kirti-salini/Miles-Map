@@ -30,6 +30,9 @@ Miles-Map is a project management application where users can create projects an
 * Users will also have the ability to mark a task as complete or incomplete, which will update the project's completeness status.
 
 <img width="800" src="/frontend/src/assets/images/create-task.gif" alt="">
+<img width="800" src="/frontend/src/assets/images/task-completion.gif" alt="">
 
 ### Assign Tasks
 * Users will have the ability to assign tasks that are not completed to anyone in the app. Upon assigning a task, the user who the task is assigned to will be able to see the task in their tasks show page.
+
+<img width="800" src="/frontend/src/assets/images/assign-task.gif" alt="">
